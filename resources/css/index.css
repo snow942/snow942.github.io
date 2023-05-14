@@ -11,9 +11,15 @@ h1 {
 p, 
 li {
   font-size: 18px;
+  text-align: center;
+
 }
 
 
 a {
   text-decoration: none;
+}
+
+div {
+  text-align: center;
 }
