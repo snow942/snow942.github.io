@@ -1,25 +1,16 @@
-* {
-  font-family: font-family: Georgia, Times, Times New Roman, serif;
-}
+* {font-family: font-family: Georgia, Times, Times New Roman, serif;}
 
 
-h1 {
-  color: black;
-}
+h1 {color: black;}
 
 
 p, 
-li {
-  font-size: 18px;
-  text-align: center;
-
-}
+li {font-size: 18px;
+  text-align: center;}
 
 
-a {
-  text-decoration: none;
-}
+a {text-decoration: none;}
 
-div {
-  text-align: center;
-}
+div {text-align: center;}
+
+div {background: linear-gradient(to bottom, #fae5c4 0%, #ffcccc 100%);}
