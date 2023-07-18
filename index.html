@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<!-- v0.1.0 -->
 
-<html>
+<!-- v0.2.0 -->
+
+<html lang="en">
 
 <!-- Link to site index.css -->
 <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
 
 <!-- Color Palette -->
-<!-- #fd7c6d, #f7f3e3, #6f1d1b, #686963 -->
+<!-- #702f30, #ef6367, #fff5f4, #f3eed9, #3C0000 -->
 
 <!-- Site title -->
 	<!-- Title located on site tab -->
@@ -18,75 +19,165 @@
 
 <!-- Site details -->
 <head>
+	<meta charset="UTF-8">
 	<meta name="Ryan Snow" content="width=device-width, initial-scale=1">
-		<style>
+	<style>
+        	* {box-sizing: border-box;}
+            
 			body {
-				margin: 1;
-				background-color: #F7F3E3;
+				margin: 0;
 				}
 
 			.topnav {
-				overflow: hidden;
-				background-color: #FD7C6D;
-				border-style: solid;
-				border-color: #6F1D1B;
-				border-width: 1px
+				overflow: visible;
+                position: fixed;
+                padding: 10px;
+                width: 100%;
+                box-shadow: 0px 2px 8px 0px 								rgba(0,0,0,0.2);
 				}
 
 			.topnav a {
-				float: left;
 				color: black;
 				text-align: center;
-				padding: 14px 24px;
+				padding: 5px 24px;
 				text-decoration: none;
-				font-size: 18px;
+				font-size: 20px;
+                float: right;
 				}
 
 			.topnav a:hover {
-				background-color: #6F1D1B;
-				color: white;
+				background-color: #ef6367;
+				color: #3C0000;
+                border-radius: 15px;
 				}
 
-			.title-color {
-				overflow: hidden;
-				background-color: #FD7C6D;
-				color: black;
-				font-size: 20px;
-				border-top-style: solid;
-  				border-right-style: solid;
-  				border-bottom-style: none;
-  				border-left-style: solid;;
-				border-color: #6F1D1B;
-				border-width: 1px
+		
+                
+            .topnav a.active {
+  				background-color: #ef6367;
+                border-radius: 14px;
+                color: #3C0000;
+                }
+                
+  				
+			.dropdown {
+ 	 			overflow: visible;
+                position: absolute;
 				}
-		</style>
+
+			.dropdown .dropbtn {
+  				cursor: pointer;
+  				font-size: 14px; 
+  				border: none;
+ 	 			outline: none;
+  				padding: 5px 24px;
+  				background-color: inherit;
+  				font-family: inherit;
+                
+  		
+				}
+
+			.topnav a:hover, .dropdown:hover .dropbtn, 				.dropbtn:focus {
+  				background-color: #ef6367;
+                border-radius: 14px;
+                color: #3C0000;
+				}
+
+		
+
+			.dropdown-content {
+ 				display: none;
+  				position: relative;
+  				background-color: #f9f9f9;
+  				min-width: relative;
+  				box-shadow: 0px 8px 16px 0px 							rgba(0,0,0,0.2);
+  				z-index: 1;
+				}
+
+			.dropdown-content a {
+  				float: none;
+  				color: black;
+  				padding: 12px 16px;
+  				text-decoration: none;
+  				display: block;
+				}
+
+			.dropdown-content a:hover {
+  				background-color: #ddd;
+				}
+
+			.show {
+  				display: block;
+				}
+	</style>
 </head>
-
-
+<div>
 <body>
-	<div class= "title-color">
-		<h1> Ryan Snow </h1>
-	</div>
-</body>
-
-
-<body>
+	
 
 	<div class="topnav">
 		<!-- Link to "Home" area of site -->
-		<a class="active" href="index.html">Home</a>
-
-		<a href="#About">About Me</a>
-		<a href="#Research">Research</a>
-		<a href="#Resources">Resources</a>
-		<a href="#Contact">Contact</a>
-	</div>
-
-
-	<div style="padding-left:16px">
-		<h2>Website progression</h2>
 		
-		<p>Hi, welcome to my website. As you can see my site is fairly empty at the moment. 
+        <a href="index.html" style="float: left; ">Ryan Snow</a>
+        
+        <a href="#Contact">Contact</a>
+
+		<a href="#Resources">Resources</a>
+
+		<a href="#Research">Research</a>
+        
+        <a href="#Contact">About Me</a>
+
+<!--
+
+        <div class="dropdown">
+  			<button onclick="myFunction()" 							class="dropbtn">About Me</button>
+  			<div id="myDropdown" class="dropdown-content">
+    			<a href="#home">Home</a>
+    			<a href="#about">About</a>
+    			<a href="#contact">Contact</a>
+  			</div>
+		</div>
+        
+        
+    </div>
+	
+   
+	<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+	function myFunction() {
+	document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script> 
+    
+    -->
+    
+</body>
+</div>
+
+<div>
+
+<body>
+	<div style="padding: 132px 300px">
+	
+		<span style="text-align: center"><h2>Website progression</h2></span>
+		
+		<p style="text-align: center">Hi, welcome to my website. As you can see my site is fairly empty at the moment. 
 		This is a side project I have undertaken in my spare time to further my learning of HTML basics.
 
 		<br />
@@ -96,12 +187,12 @@
 		more information is added, I urge you to take a look at my 
 		<a href="https://github.com/snow942" target="_blank">GitHub</a>,
 		my <a href="https://drive.google.com/file/d/1HN9nBqRcJ7Vq1rmSzvIsZF5UE52AUM0S/view?usp=sharing" target="_blank">CV</a>,
-		or to <a href = "mailto: snow4964@gmail.com">email me</a> (at snow4964@gmail.com).
+		or to <a href = "mailto: snow4964@gmail.com">email me</a>.
 		</p>
+        
 	</div>
 
 
-</body>
-
+</div>
 
 </html>
