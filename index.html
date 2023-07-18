@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<!-- v0.2.0 -->
+<!-- v0.3.1 -->
 
 <html lang="en">
 
@@ -24,91 +24,96 @@
 	<style>
         	* {box-sizing: border-box;}
             
-			body {
-				margin: 0;
-				}
-
-			.topnav {
-				overflow: visible;
-                position: fixed;
-                padding: 10px;
-                width: 100%;
-                box-shadow: 0px 2px 8px 0px 								rgba(0,0,0,0.2);
-				}
-
-			.topnav a {
-				color: black;
-				text-align: center;
-				padding: 5px 24px;
-				text-decoration: none;
-				font-size: 20px;
-                float: right;
-				}
-
-			.topnav a:hover {
-				background-color: #ef6367;
-				color: #3C0000;
-                border-radius: 15px;
-				}
-
-		
+		body {
+			margin: 0;
+			}
                 
-            .topnav a.active {
-  				background-color: #ef6367;
-                border-radius: 14px;
-                color: #3C0000;
-                }
+            	ul { 
+			padding:0; 
+			margin:0;
+			}
+
+		li {
+			display:block; 
+			right:0;
+			}
                 
-  				
-			.dropdown {
- 	 			overflow: visible;
-                position: absolute;
-				}
-
-			.dropdown .dropbtn {
-  				cursor: pointer;
-  				font-size: 14px; 
-  				border: none;
- 	 			outline: none;
-  				padding: 5px 24px;
-  				background-color: inherit;
-  				font-family: inherit;
+            	li ul li {
+			right:0;
+                	}
                 
-  		
-				}
+            	li ul {
+			display:none; 
+			position:absolute; 
+			z-index:1;
+             		}
+                
+            	li:hover ul {
+			display:block;
+             		}
+             
+			
 
-			.topnav a:hover, .dropdown:hover .dropbtn, 				.dropbtn:focus {
-  				background-color: #ef6367;
-                border-radius: 14px;
-                color: #3C0000;
-				}
+            	#nav {
+                	float: right;
+                	color: black;
+        		}
+                
+            	#nav a {
+			color:#024E67; 
+			padding:30px 24px;
+                	color: black;
+			}
+                
+           	#nav a:hover {
+			background-color: #ef6367;
+			color: #3C0000;
+                	border-radius: 14px;
+                	}
 
-		
+        	#nav li {
+            		color: black;
+			padding: 30px 24px 5px;
+			text-decoration: none;
+                	background-color: white;
+                	}
 
-			.dropdown-content {
- 				display: none;
-  				position: relative;
-  				background-color: #f9f9f9;
-  				min-width: relative;
-  				box-shadow: 0px 8px 16px 0px 							rgba(0,0,0,0.2);
-  				z-index: 1;
-				}
+            	#nav li:hover ul {
+            		background-color: white;
+			color: #3C0000;
+                	border-radius: 15px;
+                	float: left
+                	}
 
-			.dropdown-content a {
-  				float: none;
-  				color: black;
-  				padding: 12px 16px;
-  				text-decoration: none;
-  				display: block;
-				}
+		.topnav {
+			overflow: visible;
+	                position: fixed;
+        	        padding: 10px;
+                	width: 100%;
+                	box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+			}
 
-			.dropdown-content a:hover {
-  				background-color: #ddd;
-				}
+		.topnav a {
+			color: black;
+			text-align: center;
+			padding: 30px 24px;
+			text-decoration: none;
+			font-size: 20px;
+	                right:0
+			}
 
-			.show {
-  				display: block;
-				}
+		.topnav a:hover {
+			background-color: #ef6367;
+			color: #3C0000;
+ 	         	border-radius: 15px;
+			}
+
+            	.topnav a.active {
+  			background-color: #ef6367;
+                	border-radius: 14px;
+                	color: #3C0000;
+                	}
+
 	</style>
 </head>
 <div>
@@ -118,55 +123,23 @@
 	<div class="topnav">
 		<!-- Link to "Home" area of site -->
 		
-        <a href="index.html" style="float: left; ">Ryan Snow</a>
+        <a href="index.html" style="float: left; font-size: 42px; padding: 15px 24px;">Ryan Snow</a>
         
-        <a href="#Contact">Contact</a>
+        <a href="#Contact" style="float: right;">Contact</a>
 
-		<a href="#Resources">Resources</a>
+		<a href="#Resources"style="float: right;">Resources</a>
 
-		<a href="#Research">Research</a>
-        
-        <a href="#Contact">About Me</a>
-
-<!--
-
-        <div class="dropdown">
-  			<button onclick="myFunction()" 							class="dropbtn">About Me</button>
-  			<div id="myDropdown" class="dropdown-content">
-    			<a href="#home">Home</a>
-    			<a href="#about">About</a>
-    			<a href="#contact">Contact</a>
-  			</div>
-		</div>
-        
-        
-    </div>
-	
-   
-	<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-	function myFunction() {
-	document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script> 
-    
-    -->
-    
+		<a href="#Research" style="float: right;">Research</a>
+        <ul id="nav">
+		<li><a href="#About">About Me</a>
+	            <ul> 
+    			<li><a href='#' style="display:block; padding:15px;">Sun</a></li>
+         		<li><a href='#' style="display:block; padding:15px;">Betelgeuse</a></li>
+         		<li><a href='#' style="display:block; padding:15px;">Bellatrix</a></li>
+	            </ul>
+		</li>
+        </ul>
+  </div>  
 </body>
 </div>
 
@@ -192,7 +165,7 @@ window.onclick = function(event) {
         
 	</div>
 
-
+</body>
 </div>
 
 </html>
