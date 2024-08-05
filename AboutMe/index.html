@@ -1,171 +1,149 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 
-<!-- v0.3.1 -->
+<!-- v1.0.1 -->
 
 <html lang="en">
 
-<!-- Link to site index.css -->
-<link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+<!-- Color Palette 
 
-<!-- Color Palette -->
-<!-- #702f30, #ef6367, #fff5f4, #f3eed9, #3C0000 -->
+#FA8072
 
-<!-- Site title -->
-	<!-- Title located on site tab -->
-<head>
-	<title>Ryan Snow</title>
-</head>
+-->
 
 
-<!-- Site details -->
-<head>
-	<meta charset="UTF-8">
-	<meta name="Ryan Snow" content="width=device-width, initial-scale=1">
-	<style>
-        	* {box-sizing: border-box;}
-            
-		body {
-			margin: 0;
-			}
-                
-            	ul { 
-			padding:0; 
-			margin:0;
-			}
+<!--
+	Miniport by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 
-		li {
-			display:block; 
-			right:0;
-			}
-                
-            	li ul li {
-			right:0;
-                	}
-                
-            	li ul {
-			display:none; 
-			position:absolute; 
-			z-index:1;
-             		}
-                
-            	li:hover ul {
-			display:block;
-             		}
-             
-			
+<html>
+	<head>
+		<title>Ryan Snow</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+	</head>
+	<body class="is-preload">
 
-            	#nav {
-                	float: right;
-                	color: black;
-        		}
-                
-            	#nav a {
-			color:#024E67; 
-			padding:30px 24px;
-                	color: black;
-			}
-                
-           	#nav a:hover {
-			background-color: #ef6367;
-			color: #3C0000;
-                	border-radius: 14px;
-                	}
+<!--- Nav --->
 
-        	#nav li {
-            		color: black;
-			padding: 30px 24px 5px;
-			text-decoration: none;
-                	background-color: white;
-                	}
+			<nav id="nav">
+				<ul class="container">
+					<li><a href="index.html">Home</a></li>
+					<ul id="nav">
+					<li><a href="https://snow942.github.io/AboutMe/index.html">About Me</a></li>
+					<li><a href="https://snow942.github.io/Research/index.html">Research Interests</a></li>
+					<li><a href="https://github.com/snow942">GitHub</a></li>
+					<li><a href="https://snow942.github.io/Resources/index.html">Resources</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
 
-            	#nav li:hover ul {
-            		background-color: white;
-			color: #3C0000;
-                	border-radius: 15px;
-                	float: left
-                	}
+<!-- Home -->
+			<article id="top" class="wrapper style1">
+				<div class="container">
+					<div class="row">
+						<div class="col-4 col-5-large col-12-medium">
+							<span class="image fit"><img src="Resources/images/IMG_20231225_175222.jpg" alt="Resources/images/IMG_20221225_120301.jpg" /></span>
+						</div>
+						<div class="col-8 col-7-large col-12-medium">
+							<header>
+								<h1>Hi, I'm <strong>Ryan Snow</strong>.</h1>
+							</header>
+							<p style=>Hi, I am Ryan Snow, welcome to my website. At the moment the content is a bit sparse. More information is to come. As I continue you to work on my website please feel free to review my <a href="https://github.com/snow942" target="_blank">GitHub</a>, <a href="https://github.com/snow942/snow942.github.io/Resources/Ryan%20Snow_CV" target="_blank">CV</a>, and <a href="https://github.com/snow942/snow942.github.io/Resources/Ryan%20Snow_Resume" target="_blank">resume</a>.</p>
+					
+							<div><a href="https://snow942.github.io/AboutMe/index.html" class="button large scrolly">Learn more about me</a><div>
+						</div>
+					</div>
+				</div>
+			</article>
 
-		.topnav {
-			overflow: visible;
-	                position: fixed;
-        	        padding: 10px;
-                	width: 100%;
-                	box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
-			}
+<!--- Work --->
 
-		.topnav a {
-			color: black;
-			text-align: center;
-			padding: 30px 24px;
-			text-decoration: none;
-			font-size: 20px;
-	                right:0
-			}
+			<article id="work" class="wrapper style2">
+				<div class="container">
+					<header>
+						<span style="text-align: center"><h2>Areas of focus</h2></span>
+						
+					</header>
+					<div class="row aln-center">
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style1">
+								<span class="icon solid featured fa-flask"></span>
+								<h3>Molecular Biology</h3>
+								<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
+							</section>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style1">
+								<span class="icon solid featured fa-spinner"></span>
+								<h3>Microbiology</h3>
+								<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
+							</section>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style1">
+								<span class="icon solid featured fa-laptop"></span>
+								<h3>Computational Biology</h3>
+								<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
+							</section>
+						</div>
+					</div>
+				</div>
+			</article>
 
-		.topnav a:hover {
-			background-color: #ef6367;
-			color: #3C0000;
- 	         	border-radius: 15px;
-			}
-
-            	.topnav a.active {
-  			background-color: #ef6367;
-                	border-radius: 14px;
-                	color: #3C0000;
-                	}
-
-	</style>
-</head>
-<div>
-<body>
-	
-
-	<div class="topnav">
-		<!-- Link to "Home" area of site -->
 		
-        <a href="index.html" style="float: left; font-size: 42px; padding: 15px 24px;">Ryan Snow</a>
-        
-        <a href="https://github.com/snow942" style="float: right;">GitHub</a>
+<!-- Contact -->
 
-		<a href="#Resources"style="float: right;">Resources</a>
+			<article id="contact" class="wrapper style4">
+				<div class="container medium">
+					<header>
+						<h2>Contact Me</h2>
+						
+					</header>
+					<div class="row">
+						<div class="col-12">
+							<form method="post" action="https://formspree.io/f/mnnadrpa">
+								<div class="row">
+									<div class="col-6 col-12-small">
+										<input type="text" name="name" id="name" placeholder="Name" />
+									</div>
+									<div class="col-6 col-12-small">
+										<input type="text" name="email" id="email" placeholder="Email" />
+									</div>
+									<div class="col-12">
+										<input type="text" name="subject" id="subject" placeholder="Subject" />
+									</div>
+									<div class="col-12">
+										<textarea name="message" id="message" placeholder="Message"></textarea>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" /></li>
+											<li><input type="reset" value="Clear Form" class="alt" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</div>
+						
+					</div>
+					<footer>
+						<ul id="copyright">
+							<li>&copy; Ryan Snow. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+				</div>
+			</article>
 
-		<a href="#Research" style="float: right;">Research</a>
-        <ul id="nav">
-		<li><a href="#About">About Me</a>
-	            <ul> 
-    			<li><a href='#' style="display:block; padding:15px;">Sun</a></li>
-         		<li><a href='#' style="display:block; padding:15px;">Betelgeuse</a></li>
-         		<li><a href='#' style="display:block; padding:15px;">Reading List</a></li>
-	            </ul>
-		</li>
-        </ul>
-  </div>  
-</body>
-</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-<div>
-
-<body>
-	<div style="padding: 132px 300px">
-	
-		<span style="text-align: center"><h2>Website progression About Me</h2></span>
-		
-		<p style="text-align: center">Hi, welcome to my website. As you can see my site is fairly empty at the moment. 
-		This is a side project I have undertaken in my spare time to further my learning of HTML basics.
-
-		<br />
-		<br />
-
-		For the time being, as this site further develops and as
-		more information is added, I urge you to take a look at my 
-		<a href="https://github.com/snow942" target="_blank">GitHub</a>,
-		my <a href="https://drive.google.com/file/d/1HN9nBqRcJ7Vq1rmSzvIsZF5UE52AUM0S/view?usp=sharing" target="_blank">CV</a>,
-		or to <a href = "mailto: snow4964@gmail.com">email me</a>.
-		</p>
-        
-	</div>
-
-</body>
-</div>
-
+	</body>
 </html>
