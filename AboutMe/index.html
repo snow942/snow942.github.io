@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 
-<!-- v1.0.1 -->
+<!-- About Me v1.0.01 -->
 
 <html lang="en">
 
@@ -17,12 +17,13 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 
+
 <html>
 	<head>
 		<title>Ryan Snow</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+		<link rel="stylesheet" type="text/css" href="./assets/css/main.css">
 	</head>
 	<body class="is-preload">
 
@@ -32,68 +33,141 @@
 				<ul class="container">
 					<li><a href="index.html">Home</a></li>
 					<ul id="nav">
+					<li><a href="https://snow942.github.io">Home</a></li>
 					<li><a href="https://snow942.github.io/AboutMe/index.html">About Me</a></li>
-					<li><a href="https://snow942.github.io/Research/index.html">Research Interests</a></li>
+					<li><a href="https://snow942.github.io/Research/index.html">Research</a></li>
 					<li><a href="https://github.com/snow942">GitHub</a></li>
-					<li><a href="https://snow942.github.io/Resources/index.html">Resources</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
 
 <!-- Home -->
-			<article id="top" class="wrapper style1">
-				<div class="container">
-					<div class="row">
-						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="Resources/images/IMG_20231225_175222.jpg" alt="Resources/images/IMG_20221225_120301.jpg" /></span>
-						</div>
-						<div class="col-8 col-7-large col-12-medium">
-							<header>
-								<h1>Hi, I'm <strong>Ryan Snow</strong>.</h1>
-							</header>
-							<p style=>Hi, I am Ryan Snow, welcome to my website. At the moment the content is a bit sparse. More information is to come. As I continue you to work on my website please feel free to review my <a href="https://github.com/snow942" target="_blank">GitHub</a>, <a href="https://github.com/snow942/snow942.github.io/Resources/Ryan%20Snow_CV" target="_blank">CV</a>, and <a href="https://github.com/snow942/snow942.github.io/Resources/Ryan%20Snow_Resume" target="_blank">resume</a>.</p>
-					
-							<div><a href="https://snow942.github.io/AboutMe/index.html" class="button large scrolly">Learn more about me</a><div>
-						</div>
-					</div>
-				</div>
-			</article>
 
-<!--- Work --->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	* {box-sizing: border-box;}
+		body {font-family: Verdana, sans-serif;}
+		.mySlides {display: none;}
+		img {vertical-align: middle;}
 
-			<article id="work" class="wrapper style2">
-				<div class="container">
-					<header>
-						<span style="text-align: center"><h2>Areas of focus</h2></span>
-						
-					</header>
-					<div class="row aln-center">
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="icon solid featured fa-flask"></span>
-								<h3>Molecular Biology</h3>
-								<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="icon solid featured fa-spinner"></span>
-								<h3>Microbiology</h3>
-								<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="icon solid featured fa-laptop"></span>
-								<h3>Computational Biology</h3>
-								<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
-							</section>
-						</div>
-					</div>
-				</div>
-			</article>
+	/* Slideshow container */
+		.slideshow-container {
+		  max-width: 1000px;
+		  position: relative;
+		  margin: auto;
+		}
 
-		
+	/* Caption text */
+		.text {
+		  color: #f2f2f2;
+		  font-size: 15px;
+		  padding: 8px 12px;
+		  position: absolute;
+		  bottom: 8px;
+		  width: 100%;
+		  text-align: center;
+		}
+
+	/* Number text (1/4 etc) */
+		.numbertext {
+		  color: #f2f2f2;
+		  font-size: 12px;
+		  padding: 8px 12px;
+		  position: absolute;
+		  top: 0;
+		}
+
+	/* The dots/bullets/indicators */
+		.dot {
+		  height: 15px;
+		  width: 15px;
+		  margin: 0 2px;
+		  background-color: #bbb;
+		  border-radius: 50%;
+		  display: inline-block;
+		  transition: background-color 0.6s ease;
+		}
+
+		.active {
+		  background-color: #717171;
+		}
+
+	/* Fading animation */
+		.fade {
+		  animation-name: fade;
+		  animation-duration: 1.5s;
+		}
+
+	@keyframes fade {
+	  from {opacity: .4} 
+	  to {opacity: 1}
+	}
+
+	/* On smaller screens, decrease text size */
+		@media only screen and (max-width: 300px) {
+		  .text {font-size: 11px}
+		}
+</style>
+
+<body>
+	<div class="slideshow-container">
+
+	<!--- Images --->
+	<div class="mySlides fade">
+	  <img src="https://github.com/snow942/snow942.github.io/Resources/images/IMG_20221225_120301.jpg" style="width:100%">
+	  <div class="text">Ryan and Chewy</div>
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="https://github.com/snow942/snow942.github.io/Resources/images/IMG_20231225_175222.jpg" style="width:100%">
+	  <div class="text">Ryan and Raven - Christmas</div>
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="https://github.com/snow942/snow942.github.io/Resources/images/IMG_20240824_210053.jpg" style="width:100%">
+	  <div class="text">Ryan at AnimeNYC 2024</div>
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="https://github.com/snow942/snow942.github.io/Resources/images/IMG_20240824_210056.jpg" style="width:100%">
+	  <div class="text">Ryan and Raven at AnimeNYC 2024</div>
+	</div>
+	</div>
+	<br>
+
+	<div style="text-align:center">
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	</div>
+
+	<script>
+		let slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+		  let i;
+		  let slides = document.getElementsByClassName("mySlides");
+		  let dots = document.getElementsByClassName("dot");
+		  for (i = 0; i < slides.length; i++) {
+		    slides[i].style.display = "none";  
+		  }
+
+		  slideIndex++;
+		  if (slideIndex > slides.length) {slideIndex = 1}    
+		  for (i = 0; i < dots.length; i++) {
+		    dots[i].className = dots[i].className.replace(" active", "");
+		  }
+
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		  setTimeout(showSlides, 7500); // Change image every 7.5 seconds
+		}
+	</script>
+
+</body>
+
+
 <!-- Contact -->
 
 			<article id="contact" class="wrapper style4">
@@ -137,7 +211,7 @@
 				</div>
 			</article>
 
-		<!-- Scripts -->
+<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
